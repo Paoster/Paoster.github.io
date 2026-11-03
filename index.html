@@ -35,7 +35,7 @@ a{color:inherit}
 /* 1 hero */
 .hero{height:240vh;--p:0}
 .hero .stick{background:color-mix(in srgb,var(--ink) calc(var(--p)*100%),var(--blue));color:var(--white);display:flex;flex-direction:column;justify-content:flex-end;padding:0 var(--pad) clamp(1.5rem,5vh,3.5rem)}
-.name{font-size:clamp(4.6rem,19vw,17rem);line-height:.82;margin:0 0 0 -.04em;position:relative;z-index:2;transform-origin:0 100%;transform:translateY(calc(var(--p)*-14vh)) scale(calc(1 - var(--p)*.42))}
+.name{font-size:clamp(3.6rem,min(19vw,30vh),17rem);line-height:.82;margin:0 0 0 -.04em;position:relative;z-index:2;transform-origin:0 100%;transform:translateY(calc(var(--p)*-14vh)) scale(calc(1 - var(--p)*.42))}
 .name span{display:block;overflow:hidden;padding-bottom:.06em}
 .name i{display:block;font-style:normal;animation:up .9s cubic-bezier(.2,.8,.2,1) both}
 .name span:nth-child(2) i{animation-delay:.12s}
@@ -43,7 +43,7 @@ a{color:inherit}
 .intro{display:flex;justify-content:flex-start;align-items:flex-end;gap:2rem;margin-top:clamp(1rem,3vh,2rem);position:relative;z-index:2;opacity:calc(1 - var(--p)*3)}
 .intro p{margin:0;max-width:33rem;font-size:clamp(1.15rem,2.1vw,1.5rem);line-height:1.4}
 .go{flex:none;background:var(--sun);color:var(--ink);font:800 1.05rem var(--display);font-stretch:110%;padding:1rem 1.5rem;text-decoration:none;box-shadow:6px 6px 0 var(--ink)}
-.print{position:absolute;z-index:1;right:clamp(1rem,7vw,8rem);top:clamp(4.5rem,13vh,8rem);width:clamp(11rem,29vw,25rem);margin:0;transform:translate(calc(var(--p)*-10vw),calc(var(--p)*6vh)) rotate(calc(5deg - var(--p)*5deg)) scale(calc(1 + var(--p)*.5));animation:drop .9s .25s cubic-bezier(.2,.8,.2,1) both}
+.print{position:absolute;z-index:1;right:clamp(1rem,7vw,8rem);top:clamp(4.5rem,13vh,8rem);width:clamp(9rem,min(29vw,34vh),25rem);margin:0;transform:translate(calc(var(--p)*-10vw),calc(var(--p)*6vh)) rotate(calc(5deg - var(--p)*5deg)) scale(calc(1 + var(--p)*.5));animation:drop .9s .25s cubic-bezier(.2,.8,.2,1) both}
 @keyframes drop{from{opacity:0;translate:0 -30px}to{opacity:1;translate:0 0}}
 .photo{background:var(--sun);box-shadow:10px 10px 0 var(--ink);line-height:0}
 .photo img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;filter:grayscale(1) contrast(1.2) brightness(1.05);mix-blend-mode:multiply}
@@ -53,7 +53,7 @@ a{color:inherit}
 /* 2 statement */
 .say{height:340vh;--p:0}
 .say .stick{background:var(--ink);color:var(--white);display:flex;align-items:center;padding:0 var(--pad)}
-.stmt{font:900 clamp(2.2rem,6.6vw,6rem)/1.02 var(--display);font-stretch:112%;letter-spacing:-.035em;margin:0;max-width:20em}
+.stmt{font:900 clamp(1.9rem,min(5.8vw,8.6vh),6rem)/1.02 var(--display);font-stretch:112%;letter-spacing:-.035em;margin:0;max-width:20em}
 .stmt span{opacity:.16;transition:opacity .25s,color .25s}
 .stmt span.lit{opacity:1}
 .stmt span.hot{color:var(--sun)}
@@ -64,10 +64,10 @@ a{color:inherit}
 .c-sun{background:var(--sun)}
 .c-coral{background:var(--coral)}
 .c-mint{background:var(--mint)}
-.proj .stick{display:flex;flex-direction:column;justify-content:flex-end;padding:clamp(5rem,13vh,8rem) var(--pad) clamp(2.5rem,7vh,4.5rem)}
-.pn{font-size:clamp(3rem,10.5vw,9.5rem);margin:0 0 1.2rem;transform:translateX(calc(var(--p)*-5vw))}
+.proj .stick{display:flex;flex-direction:column;justify-content:flex-end;padding:clamp(4.5rem,11vh,8rem) var(--pad) clamp(2rem,6vh,4.5rem)}
+.pn{font-size:clamp(2.4rem,min(9vw,15vh),9.5rem);margin:0 0 1.2rem;transform:translateX(calc(var(--p)*-5vw))}
 .ps{font-style:italic;margin:0 0 .6rem}
-.pd{margin:0 0 1.6rem;max-width:40rem;font-size:clamp(1.1rem,1.8vw,1.4rem);line-height:1.5}
+.pd{margin:0 0 1.6rem;max-width:40rem;font-size:clamp(1rem,min(1.8vw,2.7vh),1.4rem);line-height:1.5}
 .links{display:flex;gap:.8rem;flex-wrap:wrap}
 .links a{font:800 1rem var(--display);font-stretch:105%;background:var(--ink);color:var(--white);padding:.75rem 1.2rem;text-decoration:none;transition:transform .15s}
 .c-blue .links a{background:var(--sun);color:var(--ink)}
@@ -77,7 +77,7 @@ a{color:inherit}
 .nums{height:calc(var(--n,2)*130vh);--p:0}
 .nums .stick{display:grid;place-items:center}
 .stat{position:absolute;left:var(--pad);right:var(--pad);top:50%;opacity:0;transform:translateY(-44%)}
-.num{font-size:clamp(7rem,32vw,30rem);line-height:.8;margin:0 0 1.5rem}
+.num{font-size:clamp(5rem,min(32vw,46vh),30rem);line-height:.8;margin:0 0 1.5rem}
 .c-blue .num{color:var(--sun)}
 .c-sun .num{color:var(--blue)}
 .c-coral .num,.c-mint .num{color:var(--ink)}
